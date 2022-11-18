@@ -1,0 +1,22 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "This application generates a markdown readme file using command line input",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shd327/ReadMe-Generator.git"
+  },
+  "author": "siddharth desai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shd327/ReadMe-Generator/issues"
+  },
+  "homepage": "https://github.com/shd327/ReadMe-Generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
+}
