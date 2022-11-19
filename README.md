@@ -14,6 +14,8 @@ The purpose of this project was to develop a ReadMe.md through the command line.
 - [Contribution](#contribution)
 - [Tests](#tests)
 - [Questions](#questions)
+- [Resouces](#resources)
+- [Links](#links)
 
 
 ## Installation
@@ -64,5 +66,16 @@ Want to learn more please contact me at:
 
 shd327@gmail.com
 
+## Resources
+* https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
+* https://opensource.org/licenses/BSD-2-Clause
+* https://opensource.org/licenses/BSD-3-Clause
+* https://choosealicense.com/licenses/unlicense/
+* https://choosealicense.com/licenses/apache-2.0/
+* https://opensource.org/licenses/MIT
+* https://gist.github.com/kofiav/c1059e1075b67582e86b07aa9759e20d
+* https://shields.io/
+* https://www.npmjs.com/package/inquirer
 
-
+## Links
+* https://github.com/shd327/ReadMe-Generator
