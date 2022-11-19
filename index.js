@@ -109,15 +109,15 @@ ${tests}
 
 ## Questions
 Want to see more of my work ?
-'''
+
  ${github}
-'''
+
        
 Want to learn more please contact me at:
-'''
+
 ${email}
 
-'''
+
 
 `;
 
