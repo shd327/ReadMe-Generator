@@ -1,5 +1,5 @@
 # ReadMe Generator
-### shd327
+### Created By shd327
 
 ## Description
 The purpose of this project was to develop a ReadMe.md through the command line. The project leverages technologies such as node.js javascript, inquirer and the file system library. The user is prompted with questions and the answers are stored and later used in generating the ReadMd.md file
@@ -10,9 +10,10 @@ The purpose of this project was to develop a ReadMe.md through the command line.
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
+- [Contribution](#contribution)
 - [Tests](#tests)
 - [Questions](#questions)
-- [Resources](#resources)
+
 
 ## Installation
 N/A
@@ -43,16 +44,21 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+## Contribution
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
 ## Tests
-  N/A
+N/A
 
-## Questions 
-    Want to see more of my work ? 
-    [Github Link](https://github.com/SHD327)
-        
-Want to learn more please contact me at shd327@gmail.com
+## Questions
+Want to see more of my work ?
+'''
+ https://github.com/SHD327
+'''
+       
+Want to learn more please contact me at:
+'''
+shd327@gmail.com
 
-## Resources
-https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba, 
-https://opensource.org/search/node/free, 
-https://shields.io/
+'''
+
