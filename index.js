@@ -79,8 +79,37 @@ const promptUser = () => {
 }
 
 const htmlData = ({ title, description, userName, installation, usage, badge, license, copyright, fullName, tests, email, github, contribution }) =>
-    `
-    `
+    `# ${title}
+### ${userName}
+## Description
+${description}
+<br />
+${renderBadge(badge)}
+## Table of Contents
+1.[Description. ](#description)
+2.[Installation. ](#installation)
+3.[Usage. ](#usage)
+4.[License. ](#license)
+6.[Tests. ](#tests)
+7.[Questions. ](#questions)
+7.[Resources. ](#resources)
+## Installation
+${installation}
+## Usage
+${usage}
+## ${license}
+${renderLicense(badge, fullName, copyright)}
+## Tests
+  ${tests}
+## Questions ?
+    Want to see more of my work ? [Github Link](${github})
+        <br />
+Want to learn more please contact me at ${email}
+## Resources
+${contribution}
+`;
+
+
 
 // Create function for grabbibg the bagdge image
 // create function to generate the license detail depending and place the year and name as a template literal
@@ -93,6 +122,64 @@ const generate = () => {
         .catch((err) => console.error(err))
 }
 generate()
+
+function renderBadge(badge) {
+    switch (badge) {
+        case ('BSD 2-Clause License'): {
+            return "[![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)"
+
+        }
+        case ('BSD 3-Clause License'): {
+            return "[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)"
+        }
+        case ('Apache 2.0 License'): {
+            "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+        }
+        case ('The MIT License'): {
+            return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+        }
+        case ('none'): {
+            return "";
+        }
+        default:
+            break
+    }
+}
+function renderLicense(badge, fullName, copyright) {
+    switch (badge) {
+        case ('BSD 2-Clause License'): {
+            return
+
+        }
+        case ('BSD 3-Clause License'): {
+            return
+        }
+        case ('Apache 2.0 License'): {
+            return `Copyright ${copyright} ${fullName}
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.`
+        }
+        case ('The MIT License'): {
+            return
+        }
+        case ('none'): {
+            return "";
+        }
+        default:
+            break
+    }
+
+}
 // const the2ClauseBSDLicense = `Copyright <YEAR> <COPYRIGHT HOLDER>
 
 // Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -151,3 +238,4 @@ generate()
 //    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 //    See the License for the specific language governing permissions and
 //    limitations under the License.`
+
