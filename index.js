@@ -81,9 +81,10 @@ const promptUser = () => {
 const htmlData = ({ title, description, userName, installation, usage, badge, license, copyright, fullName, tests, email, github, contribution }) =>
     `# ${title}
 ### ${userName}
+
 ## Description
 ${description}
-<br />
+
 ${renderBadge(badge)}
 ## Table of Contents
 - [Description](#description)
