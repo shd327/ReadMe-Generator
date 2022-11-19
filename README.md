@@ -46,10 +46,13 @@ SOFTWARE.
 ## Tests
   N/A
 
-## Questions ?
-    Want to see more of my work ? [Github Link](https://github.com/SHD327)
-        <br />
+## Questions 
+    Want to see more of my work ? 
+    [Github Link](https://github.com/SHD327)
+        
 Want to learn more please contact me at shd327@gmail.com
 
 ## Resources
-https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba, https://opensource.org/search/node/free, https://shields.io/
+https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba, 
+https://opensource.org/search/node/free, 
+https://shields.io/
