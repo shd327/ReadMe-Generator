@@ -52,13 +52,13 @@ N/A
 
 ## Questions
 Want to see more of my work ?
-'''
+
  https://github.com/SHD327
-'''
+
        
 Want to learn more please contact me at:
-'''
+
 shd327@gmail.com
 
-'''
+
 
