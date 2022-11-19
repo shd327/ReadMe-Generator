@@ -1,7 +1,8 @@
-// Require modules to be used
+// Require modules
 const inquirer = require('inquirer');
 const fs = require('fs');
 
+// PromptUser uses inqurier to run through a series of questions and collects the user input entered and stores them into a variable
 const promptUser = () => {
     return inquirer.prompt([
         {
@@ -78,7 +79,7 @@ const promptUser = () => {
     ])
 
 }
-
+// This function deconstructs the promptUser and appends it to the `markdown text` using template literals
 const htmlData = ({ title, description, userName, installation, usage, badge, copyright, fullName, tests, email, github, contribution, credits }) =>
     `# ${title}
 ### Created By ${userName}
@@ -130,11 +131,7 @@ ${email}
 
 `;
 
-
-
-// Create function for grabbibg the bagdge image
-// create function to generate the license detail depending and place the year and name as a template literal
-// generate markdown code in back ticks
+// Generates ReadMe file using fs.writeFileSync 
 
 const generate = () => {
     promptUser()
@@ -143,6 +140,7 @@ const generate = () => {
         .catch((err) => console.error(err))
 }
 
+// Additional way to generate the file using fs.writeFile
 
 // const generate = () => {
 //     promptUser()
@@ -150,7 +148,11 @@ const generate = () => {
 //             fs.writeFile('README.md', htmlData(userData), (err) =>
 //                 err ? console.error(err) : console.log('Successfully generated README.md file')))
 // }
+
+// When node index.js is entered in the terminal the generate function initiates the promptUser
 generate()
+
+// This function matches the badge name to returns the badge icon
 function renderBadge(badge) {
     switch (badge) {
         case ('BSD 2-Clause License'): {
@@ -173,6 +175,8 @@ function renderBadge(badge) {
             break
     }
 }
+
+// This function matches the badge name to returns the license detail
 function renderLicense(badge, fullName, copyright) {
     switch (badge) {
         case ('BSD 2-Clause License'): {
