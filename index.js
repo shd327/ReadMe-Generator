@@ -86,25 +86,31 @@ ${description}
 <br />
 ${renderBadge(badge)}
 ## Table of Contents
-1.[Description. ](#description)
-2.[Installation. ](#installation)
-3.[Usage. ](#usage)
-4.[License. ](#license)
-6.[Tests. ](#tests)
-7.[Questions. ](#questions)
-7.[Resources. ](#resources)
+1. [Description](#description)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [License](#license)
+6. [Tests](#tests)
+7. [Questions](#questions)
+7. [Resources](#resources)
+
 ## Installation
 ${installation}
+
 ## Usage
 ${usage}
-## ${license}
+
+## License
 ${renderLicense(badge, fullName, copyright)}
+
 ## Tests
   ${tests}
+
 ## Questions ?
     Want to see more of my work ? [Github Link](${github})
         <br />
 Want to learn more please contact me at ${email}
+
 ## Resources
 ${contribution}
 `;
