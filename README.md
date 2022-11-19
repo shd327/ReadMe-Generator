@@ -1,4 +1,4 @@
-# ReadMe Generator
+# README.md GENERATOR
 ### Created By shd327
 
 ## Description
@@ -9,6 +9,7 @@ The purpose of this project was to develop a ReadMe.md through the command line.
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Credits](#credits)
 - [License](#license)
 - [Contribution](#contribution)
 - [Tests](#tests)
@@ -16,10 +17,13 @@ The purpose of this project was to develop a ReadMe.md through the command line.
 
 
 ## Installation
-N/A
+The README generator requires installation of Node.js. Users must also have access to a IDE such as Visual Studio Code with access to the terminal or access to GitBash/Command Line Interface to run Node. Inquirer npm must also be installed.
 
 ## Usage
-N/A
+To use the README generator run: "Node index.js" in the terminal. You will be prompt with a series of questions via the terminal. After the prompts are answered, open the new README.md created in the current working directory, and preview the README (hit CTRL + Shift + V to preview in Visual Studio Code).
+
+## Credits
+No current contributors as of yet. However, please feel free to contact me if you would like to contribute
 
 ## License
 MIT License

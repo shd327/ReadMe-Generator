@@ -66,7 +66,12 @@ const promptUser = () => {
         {
             type: 'input',
             name: 'contribution',
-            message: 'Please add any resources used for this project'
+            message: 'Please add detail on how to contribute to this project'
+        },
+        {
+            type: 'input',
+            name: 'credits',
+            message: 'Please add any contributors for this project'
         },
 
 
@@ -74,7 +79,7 @@ const promptUser = () => {
 
 }
 
-const htmlData = ({ title, description, userName, installation, usage, badge, copyright, fullName, tests, email, github, contribution }) =>
+const htmlData = ({ title, description, userName, installation, usage, badge, copyright, fullName, tests, email, github, contribution, credits }) =>
     `# ${title}
 ### Created By ${userName}
 
@@ -86,6 +91,7 @@ ${renderBadge(badge)}
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Credits](#credits)
 - [License](#license)
 - [Contribution](#contribution)
 - [Tests](#tests)
@@ -97,6 +103,9 @@ ${installation}
 
 ## Usage
 ${usage}
+
+## Credits
+${credits}
 
 ## License
 ${renderLicense(badge, fullName, copyright)}
@@ -133,8 +142,15 @@ const generate = () => {
         .then(() => console.log('Successfully generated README.md file'))
         .catch((err) => console.error(err))
 }
-generate()
 
+
+// const generate = () => {
+//     promptUser()
+//         .then((userData) =>
+//             fs.writeFile('README.md', htmlData(userData), (err) =>
+//                 err ? console.error(err) : console.log('Successfully generated README.md file')))
+// }
+generate()
 function renderBadge(badge) {
     switch (badge) {
         case ('BSD 2-Clause License'): {
